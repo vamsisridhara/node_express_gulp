@@ -27,7 +27,7 @@ gulp.task('inject', function () {
     var injectOptions = {
         ignorePath: '/public'
     };
-    return gulp.src('./src/views/*.html')
+    return gulp.src('./src/views/*.ejs')
         .pipe(wiredep(options))
         .pipe(gulpinject(injectSrc, injectOptions))
         .pipe(gulp.dest('./src/views'));
