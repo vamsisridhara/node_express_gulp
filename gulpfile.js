@@ -2,8 +2,10 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var jsstylish = require('jshint-stylish');
-var jsFiles = ['*.js', 'src/**/*.js'];
 var nodemon = require('gulp-nodemon');
+
+var jsFiles = ['*.js', 'src/**/*.js'];
+
 
 gulp.task('style', function () {
     return gulp.src(jsFiles)
